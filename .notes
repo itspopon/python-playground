@@ -1,0 +1,3 @@
+Python:
+--> Use len() to get the length.
+--> range(start, stop, steps).
