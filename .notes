@@ -1,4 +1,0 @@
-Python:
---> Use len() to get the length.
---> range(start, stop, steps).
---> Use else after a for loop to execute code after the loop ends
