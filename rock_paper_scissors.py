@@ -2,8 +2,7 @@ from random import choice
 
 
 def choice_to_text(c):
-    i = c - 1
-    return ['Rock', 'Paper', 'Scissors'][i]
+    return ['Rock', 'Paper', 'Scissors'][c - 1]
 
 
 def who_wins(aiChoice, playerChoice):
@@ -42,20 +41,20 @@ while playing:
     print('3. Scissors')
     print('(Type quit to quit)')
 
-    pick = input()
+    pick = input().lower()
 
     if pick:
-        if pick[0] == '1' or pick.lower() == 'rock':
+        if pick[0] == '1' or pick == 'rock':
             print(f'You picked Rock and the AI picked {choice_to_text(ai)}')
             print(who_wins(ai, 1))
-        elif pick[0] == '2' or pick.lower() == 'paper':
+        elif pick[0] == '2' or pick == 'paper':
             print(f'You picked Paper and the AI picked {choice_to_text(ai)}')
             print(who_wins(ai, 2))
-        elif pick[0] == '3' or pick.lower() == 'scissors':
+        elif pick[0] == '3' or pick == 'scissors':
             print(
                 f'You picked Scissors and the AI picked {choice_to_text(ai)}')
             print(who_wins(ai, 3))
-        elif pick[0].lower() == 'q':
+        elif pick[0] == 'q':
             playing = False
         else:
             print('Not a valid choice, the AI wins!')
