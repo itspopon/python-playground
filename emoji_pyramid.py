@@ -25,11 +25,8 @@ while playing:
     emoji = choice(emojis)  # random emoji
 
     while count > 0:
-        # make an array and fill it with emojis
-        arr = []
-        for i in range(count):
-            arr.append(emoji)
-        print(' '.join(arr))
+        # print the mojis count times
+        print(f' {emoji}' * count)
 
         # count up or down
         if down:
