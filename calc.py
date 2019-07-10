@@ -9,7 +9,7 @@ def calculate(**options):
     operation = options.get('operation')
     first = options.get('first')
     second = options.get('second')
-    
+
     if operation == 'add':
         result = first + second
     if operation == 'subtract':
